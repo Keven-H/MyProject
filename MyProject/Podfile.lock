@@ -1,0 +1,69 @@
+PODS:
+  - AFDownloadRequestOperation (2.0.1):
+    - AFNetworking (~> 2.0)
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - MBProgressHUD (0.9.2)
+  - MD5Digest (1.1.0)
+  - OpenUDID (1.0.0)
+  - Reachability (3.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - UICKeyChainStore (2.1.1)
+  - XXNibBridge (2.3.1)
+
+DEPENDENCIES:
+  - AFDownloadRequestOperation (~> 2.0.1)
+  - AFNetworking (~> 2.5.4)
+  - FMDB (~> 2.6.2)
+  - Mantle (~> 2.0.6)
+  - MBProgressHUD (~> 0.9.2)
+  - MD5Digest (~> 1.1.0)
+  - OpenUDID (~> 1.0.0)
+  - Reachability (~> 3.2)
+  - SDWebImage (~> 3.8.2)
+  - UICKeyChainStore (~> 2.1.0)
+  - XXNibBridge (~> 2.3.1)
+
+SPEC CHECKSUMS:
+  AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
+  XXNibBridge: addb780e6db076eb2c61716aa60b176a6799b80f
+
+PODFILE CHECKSUM: 0e4b791ad0f87c728fea074ab15e83c06fb20909
+
+COCOAPODS: 1.3.1
