@@ -1,0 +1,126 @@
+//
+//  XPrefixHeader.pch
+//  myFrameworkDemo
+//
+//  Created by liyunqi on 28/03/2017.
+//  Copyright © 2017 liyunqi. All rights reserved.
+//
+
+#ifndef XPrefixHeader_pch
+#define XPrefixHeader_pch
+
+#define         IOS_VERSION_7_0_LATER [[UIDevice currentDevice].systemVersion floatValue] >= 7.0
+
+#define         IOS_VERSION_8_0_LATER [[UIDevice currentDevice].systemVersion floatValue] >= 8.0
+
+#define         IOS_VERSION_9_0_LATER [[UIDevice currentDevice].systemVersion floatValue] >= 9.0
+
+#define         usePhotoKit         IOS_VERSION_8_0_LATER
+
+//#define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
+//#define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
+
+#define XColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:255/255.0]
+#define XColorAlpa(r,g,b,A) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:A]
+
+#define kNavBarDefaultHeight  64
+
+#define kRegexEmoji  @"\\[[a-zA-Z0-9\\u4e00-\\u9fa5]+\\]"//表情
+#define kRegexURLlink  @"((http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)|(www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)" //url
+#define kRegexPhonenum  @"\\d{3}-\\d{8}|\\d{3}-\\d{7}|\\d{4}-\\d{8}|\\d{4}-\\d{7}|1+[358]+\\d{9}|\\d{8}|\\d{7}"//phone
+
+#import <UIKit/UIKit.h>
+#import "SYConfigMacro.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <MapKit/MapKit.h>
+#import "UIView+xframe.h"
+#import "NSString+SYFaceAttributedString.h"
+#import "NSString+Additions.h"
+#import "SYClusterManager.h"
+#import "UIView+Animation.h"
+#import "UIButton+SYClickMargin.h"
+#import "UIButton+SYImagePosition.h"
+#import "UIView+SYViewShowAlert.h"
+#import "SYBaseTableView.h"
+#import "SYBaseTableViewCell.h"
+#import "SYBaseTextField.h"
+#import "SYBaseTextView.h"
+#import "SYEmojiVIewObject.h"
+#import "UIImage+SYUIImageCategory.h"
+
+
+#import "SYEditTextFieldView.h"
+#import "SYEditTextView.h"
+#import "SYPlaceHolderTextView.h"
+#import "UIControl+YYAdd.h"
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+//#import "ITIBaseModel.h"
+#import <MTLModel.h>
+#import <MTLJSONAdapter.h>
+#import <NSObject+YYModel.h>
+#import "SYBaseModel.h"
+#import "SYJSONAdapter.h"
+#import <UIImage+YYAdd.h>
+#import "LBXAlertAction.h"
+#import "UIView+SYKeyboard.h"
+#import "NSMutableAttributedString+SYFont.h"
+#import "NSMutableArray+SYMutableArray.h"
+#import <YYKit.h>
+#import <YYKit/NSAttributedString+YYText.h>
+#import "SYClientInfo.h"
+#import "SYImage.h"
+#import "SYImageObjView.h"
+#import "SYImageManager.h"
+#import "UIView+SYCreateViews.h"
+#import "NSObject+MTKObserving.h"
+#import "SYBaseYYLabel.h"
+#import "XPort.h"
+#import "UILabel+UILabelCreator.h"
+#import "UIButton+UIButtonCreator.h"
+#import "SYWebViewController.h"
+#import "XShareManager.h"
+#import "SYLocationManager.h"
+#import "MSFlowScrollView.h"
+#import "TAPageControl.h"
+#import "LYEmptyViewHeader.h"
+#import "UIViewController+viewController.h"
+
+#import "AppDelegate.h"
+
+#import "SYMessageBoxManager.h"
+#import "HCXLoginManager.h"
+#import "HCXUser.h"
+#import "HCXAccountUser.h"
+#import "HCXAccountManager.h"
+#import "HCXNavgationController.h"
+#import "HCXTabbarController.h"
+#import "HCXControllerManager.h"
+#import <SensorsAnalyticsSDK.h>
+//#import <RongIMKit/RongIMKit.h>
+#import "AliyunOSSiOS.h"
+#import "HCXThirdLibraryManager.h"
+#import "HCXDateManager.h"
+#import "SYHttpRequestManager.h"
+#import "SYResponse.h"
+#import "HCXSubService.h"
+#import "XConfigCell.h"
+#import "XCellConfigModel.h"
+//#import "XTableViewConfigDelegate.h"
+#import "UIFont+HCXFont.h"
+#import "UIColor+ITIColor.h"
+#import "SYUploadImage.h"
+#import "SYFeedBackModel.h"
+#import "SYBaseImageAsset.h"
+#import "SYDefaultBaseTask.h"
+#import "SYTaskManager.h"
+//#import "HCXShowCardView.h"
+#import "HCXRouterManager.h"
+#import "HCXShareManager.h"
+#import "HCXTriesLimitEquity.h"
+#import "HCXUnlimitedEquity.h"
+#import "HCXPoi.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* XPrefixHeader_pch */

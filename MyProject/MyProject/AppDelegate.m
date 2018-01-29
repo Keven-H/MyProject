@@ -14,38 +14,136 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
++ (instancetype) shareManager
+{
+    static HCXControllerManager *controllerManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        controllerManager = [[[self class] alloc] init];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        });
+    });
+    return controllerManager;
+}
+-(AppDelegate *)appDelegate
+{
+    return [AppDelegate shareDelegate];
+}
+-(HCXTabbarController  *)currentTabBarController
+{
+    if ([[self appDelegate].window.rootViewController isKindOfClass:[HCXTabbarController class]]) {
+        return (HCXTabbarController *)[self appDelegate].window.rootViewController;
+    }
+    return nil;
+}
+-(HCXNavgationController  *)currentNavController
+{
+    if (self.currentTabBarController) {
+        if ([self.currentTabBarController presentedViewController]) {
+            if ([self.currentTabBarController.presentedViewController isKindOfClass:[HCXNavgationController class]]) {
+                return (HCXNavgationController *)self.currentTabBarController.presentedViewController;
+            }
+        }
+        return (HCXNavgationController *)self.currentTabBarController.selectedViewController;
+    }else
+    {
+        if ([[self appDelegate].window.rootViewController isKindOfClass:[HCXNavgationController class]]) {
+            return (HCXNavgationController *)[self appDelegate].window.rootViewController;
+        }
+        return nil;
+    }
+}
+-(UIViewController  *)currentViewController
+{
+    return self.currentNavController.viewControllers.lastObject;
+}
+- (void) loadNextViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    [self.currentNavController pushViewController:viewController animated:animated];
+}
+-(void)backToViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    [self.currentNavController popToViewController:viewController animated:animated];
+}
+-(void)backViewControllerWithAnimated:(BOOL)animated
+{
+    [self.currentNavController popViewControllerAnimated:animated];
+}
+-(void)backToRootControllerWithAnimated:(BOOL)animated
+{
+    [self.currentNavController popToRootViewControllerAnimated:animated];
 }
 
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+- (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^ __nullable)(void))completion{
+    [self.currentTabBarController presentViewController:viewControllerToPresent animated:flag completion:completion];
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
+
+- (UIViewController *) getControllerWithClass:(Class)className
+{
+    NSArray *controllers = [self.currentNavController viewControllers];
+    for(UIViewController *controller in controllers)
+    {
+        if([controller isKindOfClass:className])
+            return controller;
+    }
+    return nil;
 }
 
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+-(void)removeControllerWithClass:(NSArray *)clsNames
+{
+    NSMutableArray *viewControllers =[NSMutableArray arrayWithArray:[HCXControllerManager shareManager].currentNavController.viewControllers];
+
+    NSMutableArray *removeControllers=[NSMutableArray new];
+    for (UIViewController *controller in viewControllers) {
+        for (NSString *name in clsNames) {
+            if ([controller isKindOfClass:NSClassFromString(name)]) {
+                [removeControllers addObject:controller];
+            }
+        }
+    }
+    if (removeControllers.count) {
+        for (UIViewController* controller in removeControllers) {
+            [viewControllers removeObject:controller];
+        }
+        [[HCXControllerManager shareManager].currentNavController setViewControllers:[NSArray arrayWithArray:viewControllers] animated:NO];
+    }
 }
 
+-(void)removeController:(NSArray *)controllers
+{
+    NSMutableArray *viewControllers =[NSMutableArray arrayWithArray:[HCXControllerManager shareManager].currentNavController.viewControllers];
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if (controllers.count) {
+        for (UIViewController* controller in controllers) {
+            [viewControllers removeObject:controller];
+        }
+        [[HCXControllerManager shareManager].currentNavController setViewControllers:[NSArray arrayWithArray:viewControllers] animated:NO];
+    }
 }
 
+-(void)removeControllerWithType:(HCXControllersType)type
+{
+    if (type==HCXControllers_between) {
+        NSMutableArray *list=[NSMutableArray arrayWithArray:[self.currentNavController viewControllers]];
+        if (list.count>2) {
+            [list removeLastObject];
+            [list removeObjectAtIndex:0];
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+            NSMutableArray *names=[[NSMutableArray alloc]init];
+            for (NSMutableArray *controller in list) {
+                [names addObject:controller];
+            }
+            if (names.count) {
+                [self removeController:names];
+            }
+
+        }
+
+    }
 }
-
-
 @end
