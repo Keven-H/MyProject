@@ -172,7 +172,6 @@
 		84FEC4F2201AFCC6005335F8 /* SYMessageBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4DF201AFCC6005335F8 /* SYMessageBoxManager.m */; };
 		84FEC4F3201AFCC6005335F8 /* XDateDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4E1201AFCC6005335F8 /* XDateDefaultManager.m */; };
 		84FEC4F4201AFCC6005335F8 /* SYDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4E3201AFCC6005335F8 /* SYDataBaseManager.m */; };
-		84FEC4F5201AFCC6005335F8 /* SYOSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4E5201AFCC6005335F8 /* SYOSSManager.m */; };
 		84FEC4F6201AFCC6005335F8 /* SYTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4E7201AFCC6005335F8 /* SYTaskManager.m */; };
 		84FEC4F7201AFCC6005335F8 /* SYTaskTableModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4E9201AFCC6005335F8 /* SYTaskTableModelManager.m */; };
 		84FEC523201AFD8F005335F8 /* HCXAccountUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC4FA201AFD8F005335F8 /* HCXAccountUser.m */; };
@@ -208,6 +207,7 @@
 		84FEC55C201EBE6D005335F8 /* UIFont+HCXFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC55A201EBE6D005335F8 /* UIFont+HCXFont.m */; };
 		84FEC55D201EBE6D005335F8 /* UIColor+ITIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC55B201EBE6D005335F8 /* UIColor+ITIColor.m */; };
 		84FEC560201EC10A005335F8 /* HCXGuidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC55F201EC10A005335F8 /* HCXGuidViewController.m */; };
+		84FEC563201EF642005335F8 /* SYOSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC562201EF642005335F8 /* SYOSSManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -561,8 +561,6 @@
 		84FEC4E1201AFCC6005335F8 /* XDateDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDateDefaultManager.m; sourceTree = "<group>"; };
 		84FEC4E2201AFCC6005335F8 /* SYDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDataBaseManager.h; sourceTree = "<group>"; };
 		84FEC4E3201AFCC6005335F8 /* SYDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYDataBaseManager.m; sourceTree = "<group>"; };
-		84FEC4E4201AFCC6005335F8 /* SYOSSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYOSSManager.h; sourceTree = "<group>"; };
-		84FEC4E5201AFCC6005335F8 /* SYOSSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYOSSManager.m; sourceTree = "<group>"; };
 		84FEC4E6201AFCC6005335F8 /* SYTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTaskManager.h; sourceTree = "<group>"; };
 		84FEC4E7201AFCC6005335F8 /* SYTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTaskManager.m; sourceTree = "<group>"; };
 		84FEC4E8201AFCC6005335F8 /* SYTaskTableModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTaskTableModelManager.h; sourceTree = "<group>"; };
@@ -633,6 +631,8 @@
 		84FEC55B201EBE6D005335F8 /* UIColor+ITIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ITIColor.m"; sourceTree = "<group>"; };
 		84FEC55E201EC109005335F8 /* HCXGuidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCXGuidViewController.h; sourceTree = "<group>"; };
 		84FEC55F201EC10A005335F8 /* HCXGuidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCXGuidViewController.m; sourceTree = "<group>"; };
+		84FEC561201EF642005335F8 /* SYOSSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYOSSManager.h; sourceTree = "<group>"; };
+		84FEC562201EF642005335F8 /* SYOSSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYOSSManager.m; sourceTree = "<group>"; };
 		CD470C6A089A2A18459DE562 /* libPods-MyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1442,6 +1442,8 @@
 		84FEC4CC201AFCC6005335F8 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				84FEC561201EF642005335F8 /* SYOSSManager.h */,
+				84FEC562201EF642005335F8 /* SYOSSManager.m */,
 				84FEC4CD201AFCC6005335F8 /* HCXAccountManager.h */,
 				84FEC4CE201AFCC6005335F8 /* HCXAccountManager.m */,
 				84FEC4CF201AFCC6005335F8 /* HCXControllerManager.h */,
@@ -1459,8 +1461,6 @@
 				84FEC4DB201AFCC6005335F8 /* other */,
 				84FEC4E2201AFCC6005335F8 /* SYDataBaseManager.h */,
 				84FEC4E3201AFCC6005335F8 /* SYDataBaseManager.m */,
-				84FEC4E4201AFCC6005335F8 /* SYOSSManager.h */,
-				84FEC4E5201AFCC6005335F8 /* SYOSSManager.m */,
 				84FEC4E6201AFCC6005335F8 /* SYTaskManager.h */,
 				84FEC4E7201AFCC6005335F8 /* SYTaskManager.m */,
 				84FEC4E8201AFCC6005335F8 /* SYTaskTableModelManager.h */,
@@ -1794,7 +1794,6 @@
 				84FEC4722019B198005335F8 /* SYClusterManager.m in Sources */,
 				84FEC4EC201AFCC6005335F8 /* HCXDateManager.m in Sources */,
 				84FEC4BA2019B198005335F8 /* SYShareQRCodeView.m in Sources */,
-				84FEC4F5201AFCC6005335F8 /* SYOSSManager.m in Sources */,
 				84FEC47A2019B198005335F8 /* SYWebViewController.m in Sources */,
 				84FEC529201AFD8F005335F8 /* HCXDeviceRptModel.m in Sources */,
 				84FEC48C2019B198005335F8 /* IQUIView+IQKeyboardToolbar.m in Sources */,
@@ -1841,6 +1840,7 @@
 				84FEC52D201AFD8F005335F8 /* HCXShopBaseModel.m in Sources */,
 				84FEC45A2019B198005335F8 /* NSMutableAttributedString+SYFaceAtt.m in Sources */,
 				84FEC4702019B198005335F8 /* SYClusterView.m in Sources */,
+				84FEC563201EF642005335F8 /* SYOSSManager.m in Sources */,
 				84FEC4C12019B198005335F8 /* SYBaseTextField.m in Sources */,
 				84FEC4B12019B198005335F8 /* MSFlowScrollView.m in Sources */,
 				84FEC4CA2019B198005335F8 /* WDImageMaskView.m in Sources */,
