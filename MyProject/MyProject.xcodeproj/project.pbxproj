@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7994FD4E29DDAF71B4C0B5BE /* libPods-MyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD470C6A089A2A18459DE562 /* libPods-MyProject.a */; };
+		842C792320216DB200646C6F /* SYOSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C792220216DB200646C6F /* SYOSSManager.m */; };
+		842C792C2021C08E00646C6F /* MyMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C792B2021C08E00646C6F /* MyMineViewController.m */; };
+		842C792F2021C09E00646C6F /* MyActiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C792E2021C09E00646C6F /* MyActiveViewController.m */; };
+		842C79322021C0A900646C6F /* MyFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C79312021C0A900646C6F /* MyFindViewController.m */; };
+		842C79352021C0B700646C6F /* MyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C79342021C0B700646C6F /* MyHomeViewController.m */; };
+		842C79392021C20C00646C6F /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C79382021C20C00646C6F /* MyTabBarController.m */; };
 		845E2A7C1FFB9F2D00EA9AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E2A7B1FFB9F2D00EA9AC1 /* AppDelegate.m */; };
 		845E2A7F1FFB9F2D00EA9AC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E2A7E1FFB9F2D00EA9AC1 /* ViewController.m */; };
 		845E2A821FFB9F2D00EA9AC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E2A801FFB9F2D00EA9AC1 /* Main.storyboard */; };
@@ -196,7 +202,6 @@
 		84FEC536201AFD8F005335F8 /* SYUploadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC520201AFD8F005335F8 /* SYUploadImage.m */; };
 		84FEC537201AFD8F005335F8 /* SYUploadMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC522201AFD8F005335F8 /* SYUploadMsg.m */; };
 		84FEC53F201B042D005335F8 /* HCXNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC53A201B042D005335F8 /* HCXNavgationController.m */; };
-		84FEC540201B042D005335F8 /* HCXTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC53C201B042D005335F8 /* HCXTabbarController.m */; };
 		84FEC541201B042D005335F8 /* HCXTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC53E201B042D005335F8 /* HCXTabBarView.m */; };
 		84FEC552201B05DA005335F8 /* HCXSubService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC545201B05DA005335F8 /* HCXSubService.m */; };
 		84FEC553201B05DA005335F8 /* XCellConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC548201B05DA005335F8 /* XCellConfigModel.m */; };
@@ -207,7 +212,6 @@
 		84FEC55C201EBE6D005335F8 /* UIFont+HCXFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC55A201EBE6D005335F8 /* UIFont+HCXFont.m */; };
 		84FEC55D201EBE6D005335F8 /* UIColor+ITIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC55B201EBE6D005335F8 /* UIColor+ITIColor.m */; };
 		84FEC560201EC10A005335F8 /* HCXGuidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC55F201EC10A005335F8 /* HCXGuidViewController.m */; };
-		84FEC563201EF642005335F8 /* SYOSSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC562201EF642005335F8 /* SYOSSManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +234,18 @@
 /* Begin PBXFileReference section */
 		015F1357EC9B491241324AB9 /* Pods-MyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyProject/Pods-MyProject.release.xcconfig"; sourceTree = "<group>"; };
 		1ACC3B7743494C45B5DD4F86 /* Pods-MyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyProject/Pods-MyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		842C792120216DB100646C6F /* SYOSSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYOSSManager.h; sourceTree = "<group>"; };
+		842C792220216DB200646C6F /* SYOSSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYOSSManager.m; sourceTree = "<group>"; };
+		842C792A2021C08E00646C6F /* MyMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMineViewController.h; sourceTree = "<group>"; };
+		842C792B2021C08E00646C6F /* MyMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMineViewController.m; sourceTree = "<group>"; };
+		842C792D2021C09E00646C6F /* MyActiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyActiveViewController.h; sourceTree = "<group>"; };
+		842C792E2021C09E00646C6F /* MyActiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyActiveViewController.m; sourceTree = "<group>"; };
+		842C79302021C0A900646C6F /* MyFindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFindViewController.h; sourceTree = "<group>"; };
+		842C79312021C0A900646C6F /* MyFindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFindViewController.m; sourceTree = "<group>"; };
+		842C79332021C0B700646C6F /* MyHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyHomeViewController.h; sourceTree = "<group>"; };
+		842C79342021C0B700646C6F /* MyHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyHomeViewController.m; sourceTree = "<group>"; };
+		842C79372021C20C00646C6F /* MyTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
+		842C79382021C20C00646C6F /* MyTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
 		845E2A771FFB9F2D00EA9AC1 /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845E2A7A1FFB9F2D00EA9AC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		845E2A7B1FFB9F2D00EA9AC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -609,8 +625,6 @@
 		84FEC522201AFD8F005335F8 /* SYUploadMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYUploadMsg.m; sourceTree = "<group>"; };
 		84FEC539201B042D005335F8 /* HCXNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCXNavgationController.h; sourceTree = "<group>"; };
 		84FEC53A201B042D005335F8 /* HCXNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCXNavgationController.m; sourceTree = "<group>"; };
-		84FEC53B201B042D005335F8 /* HCXTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCXTabbarController.h; sourceTree = "<group>"; };
-		84FEC53C201B042D005335F8 /* HCXTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCXTabbarController.m; sourceTree = "<group>"; };
 		84FEC53D201B042D005335F8 /* HCXTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCXTabBarView.h; sourceTree = "<group>"; };
 		84FEC53E201B042D005335F8 /* HCXTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCXTabBarView.m; sourceTree = "<group>"; };
 		84FEC544201B05DA005335F8 /* HCXSubService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCXSubService.h; sourceTree = "<group>"; };
@@ -631,8 +645,6 @@
 		84FEC55B201EBE6D005335F8 /* UIColor+ITIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ITIColor.m"; sourceTree = "<group>"; };
 		84FEC55E201EC109005335F8 /* HCXGuidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCXGuidViewController.h; sourceTree = "<group>"; };
 		84FEC55F201EC10A005335F8 /* HCXGuidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCXGuidViewController.m; sourceTree = "<group>"; };
-		84FEC561201EF642005335F8 /* SYOSSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYOSSManager.h; sourceTree = "<group>"; };
-		84FEC562201EF642005335F8 /* SYOSSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYOSSManager.m; sourceTree = "<group>"; };
 		CD470C6A089A2A18459DE562 /* libPods-MyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -680,6 +692,68 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		842C79242021C00800646C6F /* myClass */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC538201B042D005335F8 /* tabbarController */,
+				842C79362021C1AB00646C6F /* TabbarVC */,
+				842C79282021C03C00646C6F /* Mine */,
+				842C79272021C02D00646C6F /* Active */,
+				842C79262021C02500646C6F /* Find */,
+				842C79252021C01D00646C6F /* Home */,
+			);
+			path = myClass;
+			sourceTree = "<group>";
+		};
+		842C79252021C01D00646C6F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				842C79332021C0B700646C6F /* MyHomeViewController.h */,
+				842C79342021C0B700646C6F /* MyHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		842C79262021C02500646C6F /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				842C79302021C0A900646C6F /* MyFindViewController.h */,
+				842C79312021C0A900646C6F /* MyFindViewController.m */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		842C79272021C02D00646C6F /* Active */ = {
+			isa = PBXGroup;
+			children = (
+				842C792D2021C09E00646C6F /* MyActiveViewController.h */,
+				842C792E2021C09E00646C6F /* MyActiveViewController.m */,
+			);
+			path = Active;
+			sourceTree = "<group>";
+		};
+		842C79282021C03C00646C6F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				842C792A2021C08E00646C6F /* MyMineViewController.h */,
+				842C792B2021C08E00646C6F /* MyMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		842C79362021C1AB00646C6F /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				84FEC539201B042D005335F8 /* HCXNavgationController.h */,
+				84FEC53A201B042D005335F8 /* HCXNavgationController.m */,
+				84FEC53D201B042D005335F8 /* HCXTabBarView.h */,
+				84FEC53E201B042D005335F8 /* HCXTabBarView.m */,
+				842C79372021C20C00646C6F /* MyTabBarController.h */,
+				842C79382021C20C00646C6F /* MyTabBarController.m */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
 		845E2A6E1FFB9F2D00EA9AC1 = {
 			isa = PBXGroup;
 			children = (
@@ -705,6 +779,7 @@
 		845E2A791FFB9F2D00EA9AC1 /* MyProject */ = {
 			isa = PBXGroup;
 			children = (
+				842C79242021C00800646C6F /* myClass */,
 				84FEC2E52019B197005335F8 /* other */,
 				84FEC2E22019AEBC005335F8 /* mainStoryboard */,
 				845E2A7A1FFB9F2D00EA9AC1 /* AppDelegate.h */,
@@ -751,7 +826,6 @@
 			isa = PBXGroup;
 			children = (
 				84FEC542201B05DA005335F8 /* other */,
-				84FEC538201B042D005335F8 /* tabbarController */,
 				84FEC4F8201AFD8F005335F8 /* model */,
 				84FEC4CC201AFCC6005335F8 /* manager */,
 				84FEC2E62019B197005335F8 /* AbstractionLibraryEx */,
@@ -1442,8 +1516,8 @@
 		84FEC4CC201AFCC6005335F8 /* manager */ = {
 			isa = PBXGroup;
 			children = (
-				84FEC561201EF642005335F8 /* SYOSSManager.h */,
-				84FEC562201EF642005335F8 /* SYOSSManager.m */,
+				842C792120216DB100646C6F /* SYOSSManager.h */,
+				842C792220216DB200646C6F /* SYOSSManager.m */,
 				84FEC4CD201AFCC6005335F8 /* HCXAccountManager.h */,
 				84FEC4CE201AFCC6005335F8 /* HCXAccountManager.m */,
 				84FEC4CF201AFCC6005335F8 /* HCXControllerManager.h */,
@@ -1535,12 +1609,6 @@
 		84FEC538201B042D005335F8 /* tabbarController */ = {
 			isa = PBXGroup;
 			children = (
-				84FEC539201B042D005335F8 /* HCXNavgationController.h */,
-				84FEC53A201B042D005335F8 /* HCXNavgationController.m */,
-				84FEC53B201B042D005335F8 /* HCXTabbarController.h */,
-				84FEC53C201B042D005335F8 /* HCXTabbarController.m */,
-				84FEC53D201B042D005335F8 /* HCXTabBarView.h */,
-				84FEC53E201B042D005335F8 /* HCXTabBarView.m */,
 			);
 			path = tabbarController;
 			sourceTree = "<group>";
@@ -1831,6 +1899,7 @@
 				84FEC4C02019B198005335F8 /* TAPageControl.m in Sources */,
 				84FEC4B32019B198005335F8 /* SYActivityItemsView.m in Sources */,
 				84FEC48E2019B198005335F8 /* UITableViewCell+JZExtension.m in Sources */,
+				842C792F2021C09E00646C6F /* MyActiveViewController.m in Sources */,
 				84FEC4732019B198005335F8 /* SYClusTerPrePermissionAlertView.m in Sources */,
 				84FEC45D2019B198005335F8 /* NSString+SYFaceAttributedString.m in Sources */,
 				84FEC557201B05DA005335F8 /* SYFeedBackTask.m in Sources */,
@@ -1840,7 +1909,7 @@
 				84FEC52D201AFD8F005335F8 /* HCXShopBaseModel.m in Sources */,
 				84FEC45A2019B198005335F8 /* NSMutableAttributedString+SYFaceAtt.m in Sources */,
 				84FEC4702019B198005335F8 /* SYClusterView.m in Sources */,
-				84FEC563201EF642005335F8 /* SYOSSManager.m in Sources */,
+				842C792320216DB200646C6F /* SYOSSManager.m in Sources */,
 				84FEC4C12019B198005335F8 /* SYBaseTextField.m in Sources */,
 				84FEC4B12019B198005335F8 /* MSFlowScrollView.m in Sources */,
 				84FEC4CA2019B198005335F8 /* WDImageMaskView.m in Sources */,
@@ -1886,11 +1955,11 @@
 				84FEC48A2019B198005335F8 /* IQTitleBarButtonItem.m in Sources */,
 				84FEC4532019B198005335F8 /* SYHttpRequestTask.m in Sources */,
 				84FEC4712019B198005335F8 /* SYClusterControllerManager.m in Sources */,
+				842C79392021C20C00646C6F /* MyTabBarController.m in Sources */,
 				84FEC4F1201AFCC6005335F8 /* HCXThirdLibraryConfig.m in Sources */,
 				845E2A7C1FFB9F2D00EA9AC1 /* AppDelegate.m in Sources */,
 				84FEC4EF201AFCC6005335F8 /* HCXShareManager.m in Sources */,
 				84FEC4522019B198005335F8 /* SYBaseHttpRequestTask.m in Sources */,
-				84FEC540201B042D005335F8 /* HCXTabbarController.m in Sources */,
 				84FEC43D2019B197005335F8 /* SYErrorView.m in Sources */,
 				84FEC49D2019B198005335F8 /* XEmptyView.m in Sources */,
 				84FEC4542019B198005335F8 /* SYOtherTask.m in Sources */,
@@ -1955,6 +2024,7 @@
 				84FEC4C82019B198005335F8 /* UIImage+WDTailor.m in Sources */,
 				84FEC44E2019B198005335F8 /* SYHttpRequestManager.m in Sources */,
 				84FEC560201EC10A005335F8 /* HCXGuidViewController.m in Sources */,
+				842C79322021C0A900646C6F /* MyFindViewController.m in Sources */,
 				84FEC4C52019B198005335F8 /* SYEditTextFieldView.m in Sources */,
 				84FEC4962019B198005335F8 /* JZLocationConverter.m in Sources */,
 				84FEC4932019B198005335F8 /* NSObject+MTKObserving.m in Sources */,
@@ -1964,11 +2034,13 @@
 				84FEC4842019B198005335F8 /* IQUIWindow+Hierarchy.m in Sources */,
 				84FEC47D2019B198005335F8 /* XRouterManager.m in Sources */,
 				84FEC528201AFD8F005335F8 /* HCXCard.m in Sources */,
+				842C79352021C0B700646C6F /* MyHomeViewController.m in Sources */,
 				84FEC44B2019B198005335F8 /* SYCondition.m in Sources */,
 				84FEC52E201AFD8F005335F8 /* HCXTriesLimitEquity.m in Sources */,
 				84FEC4472019B198005335F8 /* SYDataType.m in Sources */,
 				84FEC4AC2019B198005335F8 /* MSNavigationAlphaView.m in Sources */,
 				84FEC52B201AFD8F005335F8 /* HCXImage.m in Sources */,
+				842C792C2021C08E00646C6F /* MyMineViewController.m in Sources */,
 				84FEC4492019B198005335F8 /* SYIntType.m in Sources */,
 				84FEC4882019B198005335F8 /* IQTextView.m in Sources */,
 				84FEC4AB2019B198005335F8 /* JDFPeekabooCoordinator.m in Sources */,

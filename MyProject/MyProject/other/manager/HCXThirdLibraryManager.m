@@ -90,10 +90,10 @@
 // {
 //     NSLog(@"网络状态变化%zi",status);
 // }
-//-(void)loginOut
-//{
+-(void)loginOut
+{
 //    [[RCIM sharedRCIM] logout];
-//}
+}
 -(void)registerDeviceToken:(NSData *)deviceToken
 {
     NSString *pushToken = [[[[deviceToken description]
@@ -113,5 +113,4 @@
 //    user.portraitUri = [[HCXDateManager shareDataManager]account].user.image.url;
 //    return completion(user);
 //}
-
 @end

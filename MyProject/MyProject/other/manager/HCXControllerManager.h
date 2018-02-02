@@ -21,7 +21,7 @@ typedef enum
 /**
  当前的tabbarController
  */
--(HCXTabbarController  *)currentTabBarController;
+-(MyTabBarController  *)currentTabBarController;
 
 /**
  当前的navController

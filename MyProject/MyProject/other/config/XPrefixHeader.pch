@@ -94,7 +94,7 @@
 #import "HCXAccountUser.h"
 #import "HCXAccountManager.h"
 #import "HCXNavgationController.h"
-#import "HCXTabbarController.h"
+#import "MyTabBarController.h"
 #import "HCXControllerManager.h"
 #import <SensorsAnalyticsSDK.h>
 //#import <RongIMKit/RongIMKit.h>

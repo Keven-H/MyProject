@@ -24,10 +24,10 @@
 {
     return [AppDelegate shareDelegate];
 }
--(HCXTabbarController  *)currentTabBarController
+-(MyTabBarController  *)currentTabBarController
 {
-    if ([[self appDelegate].window.rootViewController isKindOfClass:[HCXTabbarController class]]) {
-        return (HCXTabbarController *)[self appDelegate].window.rootViewController;
+    if ([[self appDelegate].window.rootViewController isKindOfClass:[MyTabBarController class]]) {
+        return (MyTabBarController *)[self appDelegate].window.rootViewController;
     }
     return nil;
 }

@@ -16,13 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self createInitView];
 }
+- (void) createInitView{
 
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 100,100, 100)];
+
+    view.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:view];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
