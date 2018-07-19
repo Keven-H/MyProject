@@ -71,4 +71,5 @@
 }
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleDefault;
-}@end
+}
+@end

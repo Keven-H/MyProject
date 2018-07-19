@@ -15,6 +15,7 @@
     label.backgroundColor=[UIColor clearColor];
     label.textAlignment=textAlignment;
     label.textColor=color;
+    FNWeak(<#var#>, <#weakVar#>)
     label.font=font;
     return label;
 }

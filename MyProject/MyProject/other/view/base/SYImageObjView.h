@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SYImageManager.h"
+//#import "SYImageManager.h"
 typedef enum
 {
     SYImageViewPlaceImage_default,
     SYImageViewPlaceImage_waiting,
+    PROPERTY_STRONG
     //
     //....
     

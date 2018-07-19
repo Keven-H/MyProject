@@ -85,20 +85,20 @@
 //        return;
 //    }
 
-    MyTabBarController *tabbarcontroller=[[MyTabBarController alloc]init];
-    [AppDelegate shareDelegate].window.rootViewController=tabbarcontroller;
-    [[HCXThirdLibraryManager share]login];
+//    MyTabBarController *tabbarcontroller=[[MyTabBarController alloc]init];
+//    [AppDelegate shareDelegate].window.rootViewController=tabbarcontroller;
+//    [[HCXThirdLibraryManager share]login];
 //    if ([[HCXDateManager shareDataManager] accountIsLogin]) {
 //        MyTabBarController *tabbarcontroller=[[MyTabBarController alloc]init];
 //        [AppDelegate shareDelegate].window.rootViewController=tabbarcontroller;
 //        [[HCXThirdLibraryManager share]login];
 //    }else
 //    {
-//
-//        HCXGuidViewController *guidController=[HCXGuidViewController new];
-//        HCXNavgationController *nav=[[HCXNavgationController alloc]initWithRootViewController:guidController];
-//        [AppDelegate shareDelegate].window.rootViewController=nav;
-//        [[HCXThirdLibraryManager share]loginOut];
+
+        HCXGuidViewController *guidController=[HCXGuidViewController new];
+        HCXNavgationController *nav=[[HCXNavgationController alloc]initWithRootViewController:guidController];
+        [AppDelegate shareDelegate].window.rootViewController=nav;
+        [[HCXThirdLibraryManager share]loginOut];
 //    }
 }
 +(void)loginOut
